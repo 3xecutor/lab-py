@@ -1,4 +1,4 @@
-def func(list):
+def main(list):
     def Min(arg):
         minimum = min(arg)
         return minimum
@@ -19,4 +19,5 @@ def func(list):
     print(Min(list))
     print(Last(list))
 
-func([1, 2, 3])
+if __name__ == "__main__":
+    main([1, 2, 3])
