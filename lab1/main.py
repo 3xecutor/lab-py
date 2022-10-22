@@ -1,23 +1,22 @@
 def func(list):
-    def Min(arg1):
-        minimum = min(arg1)
+    def Min(arg):
+        minimum = min(arg)
         return minimum
-    def Max(arg2):
-        maximum = max(arg2)
+    def Max(arg):
+        maximum = max(arg)
         return maximum
-    def Last(arg3):
-        myMax = Max(arg3)
-        myMin = Min(arg3)
-        arg3 = list
+    def Last(arg):
+        myMax = Max(list)
+        myMin = Min(list)
         def remove():
-            arg3.remove(myMin)
-            arg3.remove(myMax)
-            for i in arg3:
-                return i
+            list.remove(myMin)
+            list.remove(myMax)
+            int_list = int(''.join(map(str, list)))
+            return int_list
         return remove()
 
     print(Max(list))
     print(Min(list))
     print(Last(list))
 
-func([1,2,3])
+func([1, 2, 3])
